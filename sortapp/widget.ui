@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>775</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QTextBrowser" name="out">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>40</y>
+     <width>311</width>
+     <height>251</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="ascButton">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>10</y>
+     <width>341</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sort Ascending</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="in">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>330</y>
+     <width>311</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="dragEnabled">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="decButton">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>280</y>
+     <width>341</width>
+     <height>261</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Sort Decending</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="clearButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>390</y>
+     <width>121</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear Output</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>390</y>
+     <width>121</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Clear Input</string>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>ascButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>ascClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>587</x>
+     <y>118</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>788</x>
+     <y>81</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>decButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>decClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>599</x>
+     <y>294</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>782</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clearButton</sender>
+   <signal>clicked()</signal>
+   <receiver>Widget</receiver>
+   <slot>clearClick()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>824</x>
+     <y>481</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>in</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>165</x>
+     <y>444</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>139</x>
+     <y>352</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ascClick()</slot>
+  <slot>decClick()</slot>
+  <slot>clearClick()</slot>
+ </slots>
+</ui>
